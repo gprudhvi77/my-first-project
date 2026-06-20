@@ -2,9 +2,11 @@ version: 2
 
 sources:
   - name: raw
-    schema: learndbt    # CHANGE THIS to your actual schema name
+    database: DBT_DEMO
+    schema: PUBLIC_RAW
+
     tables:
       - name: raw_customers
       - name: raw_orders
-      - name: raw_products
       - name: raw_payments
+      - name: raw_products
